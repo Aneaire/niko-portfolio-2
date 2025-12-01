@@ -129,15 +129,22 @@ export default function Hero() {
                   </Button>
                 </Link>
 
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="group border-2 hover:bg-slate-50 hover:border-blue-300 transition-all duration-300 hover:scale-105"
+                <a
+                  href="/Niko Santiago CV.pdf"
+                  download="Niko Santiago CV.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <Download className="mr-2 h-4 w-4" />
-                  Download CV
-                  <Download className="ml-2 h-4 w-4 group-hover:translate-y-1 transition-transform opacity-0 group-hover:opacity-100" />
-                </Button>
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    className="group border-2 hover:bg-slate-50 hover:border-blue-300 transition-all duration-300 hover:scale-105"
+                  >
+                    <Download className="mr-2 h-4 w-4" />
+                    Download CV
+                    <Download className="ml-2 h-4 w-4 group-hover:translate-y-1 transition-transform opacity-0 group-hover:opacity-100" />
+                  </Button>
+                </a>
               </div>
 
               {/* Status Indicators */}
