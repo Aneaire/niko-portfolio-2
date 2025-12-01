@@ -36,7 +36,7 @@ export default function Experiences() {
       company: "Expert Solutions Outsourcing",
       titledes:
         "Digital Marketing line of Business - handled Marketing Experts, Web Developer, SEO, Customer Service OM, Amazon FBA Expert",
-      period: "December 2015 - September 2023",
+      period: "December 2015 - November 2025",
       duration: "7+ years",
       location: "Remote / Global",
       type: "Full-time",

@@ -19,7 +19,7 @@ const Experience: Experience[] = [
     id: "hk23g4jqasd",
     title: "Director of Marketing and Sales/Senior Operations Manager",
     titledes:
-      "At Expert Solutions Outsourcing line of Business in Digital Marketing, handled Marketing Experts ,Web Developer, SEO, Customer Service OM, Amazon FBA Expert  (December 2015- 2023  September 1 )",
+      "At Expert Solutions Outsourcing line of Business in Digital Marketing, handled Marketing Experts ,Web Developer, SEO, Customer Service OM, Amazon FBA Expert  (December 2015 - November 2025)",
     des1: "Lead the marketing team in planning and executing marketing activities such as but not limited to Market Research and Analytics, Market Scanning, Forecasting and Budgeting, Marketing program execution, Sales support activities and Business Development etc.",
     des2: "As Director of Marketing in Digital Marketing Agency, I oversee the daily performance Marketing team and Sales team,This includes the analysis and review of the day-to-day operations, Marketing Ads, budget management, team development, Business development and client satisfaction ",
     list: [
