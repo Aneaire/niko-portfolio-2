@@ -4,7 +4,6 @@ import {
   ArrowUp,
   Award,
   Clock,
-  ExternalLink,
   Heart,
   Mail,
   MapPin,
@@ -249,16 +248,6 @@ export default function Footer() {
             </div>
 
             <div className="flex items-center gap-4">
-              <a
-                href="https://portfolio-8ffa3.web.app/"
-                className="group flex items-center gap-2 text-sm text-slate-400 hover:text-blue-400 transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span>UI Design & Development by Geldev</span>
-                <ExternalLink className="w-3 h-3 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-              </a>
-
               <Button
                 variant="ghost"
                 size="sm"
