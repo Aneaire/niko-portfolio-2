@@ -1,8 +1,8 @@
 import { Link } from '@tanstack/react-router'
 import { Button } from '@/components/ui/button'
-import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from '@/components/ui/navigation-menu'
+import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from '@/components/ui/navigation-menu'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
-import { Menu, X } from 'lucide-react'
+import { Menu } from 'lucide-react'
 import { useState } from 'react'
 
 export default function Navbar() {
@@ -10,7 +10,6 @@ export default function Navbar() {
 
   const navigationItems = [
     { href: '/', label: 'Home' },
-    { href: '/contact', label: 'Contact' },
   ]
 
   return (
@@ -33,21 +32,21 @@ export default function Navbar() {
               <NavigationMenuList>
                 {navigationItems.map((item) => (
                   <NavigationMenuItem key={item.href}>
-                    <Link to={item.href} asChild>
-                      <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
+                    <NavigationMenuLink asChild>
+                      <Link to={item.href} className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
                         {item.label}
-                      </NavigationMenuLink>
-                    </Link>
+                      </Link>
+                    </NavigationMenuLink>
                   </NavigationMenuItem>
                 ))}
               </NavigationMenuList>
             </NavigationMenu>
             
-            <Link to="/contact" asChild>
-              <Button size="sm">
+            <Button size="sm" asChild>
+              <Link to="/contact">
                 Get in Touch
-              </Button>
-            </Link>
+              </Link>
+            </Button>
           </div>
 
           {/* Mobile Navigation */}
@@ -72,11 +71,11 @@ export default function Navbar() {
                     </Link>
                   ))}
                   <div className="pt-4">
-                    <Link to="/contact" asChild>
-                      <Button className="w-full">
+                    <Button className="w-full" asChild>
+                      <Link to="/contact">
                         Get in Touch
-                      </Button>
-                    </Link>
+                      </Link>
+                    </Button>
                   </div>
                 </div>
               </SheetContent>

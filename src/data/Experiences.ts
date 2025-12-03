@@ -16,6 +16,29 @@ interface Experience {
 
 const Experience: Experience[] = [
   {
+    id: "ai-automation-123",
+    title: "AI Automation Specialist",
+    titledes: "Developed automated workflows using N8N and Zapier for business process optimization (2023 - October 2025)",
+    des1: "Designed and implemented AI-powered automation solutions to streamline business operations, integrating various APIs and services for efficient data flow and task automation.",
+    des2: "Utilized N8N for complex workflow orchestration and Zapier for simpler integrations, resulting in significant time savings and error reduction.",
+    list: [
+      "Workflow design and implementation",
+      "API integration with CRM and cloud services",
+      "Process optimization and error reduction",
+      "N8N and Zapier expertise"
+    ],
+    jobDes: {
+      title: "Project Details",
+      des: "Created automated systems for client onboarding, data synchronization, and notification workflows.",
+      list: [
+        "Built N8N workflows for multi-step processes involving AI APIs",
+        "Configured Zapier zaps for quick integrations between apps",
+        "Integrated with tools like Slack, Google Sheets, and email services",
+        "Achieved 50% reduction in manual tasks for clients"
+      ]
+    }
+  },
+  {
     id: "hk23g4jqasd",
     title: "Director of Marketing and Sales/Senior Operations Manager",
     titledes:
@@ -83,6 +106,29 @@ const Experience: Experience[] = [
         "Work with your team to brainstorm new and innovative growth strategies.",
       ],
     },
+  },
+  {
+    id: "ai-automation-123",
+    title: "AI Automation Specialist",
+    titledes: "Developed automated workflows using N8N and Zapier for business process optimization (2023 - October 2025)",
+    des1: "Designed and implemented AI-powered automation solutions to streamline business operations, integrating various APIs and services for efficient data flow and task automation.",
+    des2: "Utilized N8N for complex workflow orchestration and Zapier for simpler integrations, resulting in significant time savings and error reduction.",
+    list: [
+      "Workflow design and implementation",
+      "API integration with CRM and cloud services",
+      "Process optimization and error reduction",
+      "N8N and Zapier expertise"
+    ],
+    jobDes: {
+      title: "Project Details",
+      des: "Created automated systems for client onboarding, data synchronization, and notification workflows.",
+      list: [
+        "Built N8N workflows for multi-step processes involving AI APIs",
+        "Configured Zapier zaps for quick integrations between apps",
+        "Integrated with tools like Slack, Google Sheets, and email services",
+        "Achieved 50% reduction in manual tasks for clients"
+      ]
+    }
   },
 ];
 

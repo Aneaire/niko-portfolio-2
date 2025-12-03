@@ -25,7 +25,7 @@ import { useEffect, useRef, useState } from "react";
 
 export default function Experiences() {
   const [visibleCards, setVisibleCards] = useState(new Set());
-  const [hoveredCard, setHoveredCard] = useState(null);
+  const [hoveredCard, setHoveredCard] = useState<number | null>(null);
   const sectionRef = useRef(null);
 
   // Real experience data with enhanced formatting
@@ -102,6 +102,38 @@ export default function Experiences() {
       color: "from-indigo-500 to-blue-600",
       bgColor: "from-indigo-50 to-blue-50",
     },
+    {
+      id: "ai-automation-123",
+      title: "AI Automation Specialist",
+      company: "Freelance / Independent Projects",
+      titledes: "Developed automated workflows using N8N and Zapier for business process optimization",
+      period: "2023 - October 2025",
+      duration: "1+ years",
+      location: "Remote",
+      type: "Freelance",
+      des1: "Designed and implemented AI-powered automation solutions to streamline business operations, integrating various APIs and services for efficient data flow and task automation.",
+      des2: "Utilized N8N for complex workflow orchestration and Zapier for simpler integrations, resulting in significant time savings and error reduction.",
+      achievements: [
+        "Automated client onboarding processes, reducing setup time by 60%",
+        "Integrated AI APIs for data analysis and notifications",
+        "Delivered custom workflows for 5+ clients across industries"
+      ],
+      skills: [
+        "N8N Workflows",
+        "Zapier Integrations",
+        "API Integration",
+        "Process Automation",
+        "AI Tool Integration"
+      ],
+      responsibilities: [
+        "Designing and building automated workflows",
+        "Integrating with third-party APIs and services",
+        "Optimizing business processes for efficiency",
+        "Providing consultation on automation best practices"
+      ],
+      color: "from-cyan-500 to-blue-600",
+      bgColor: "from-cyan-50 to-blue-50"
+    },
   ];
 
   useEffect(() => {
@@ -109,7 +141,7 @@ export default function Experiences() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            const index = parseInt(entry.target.dataset.index);
+            const index = parseInt((entry.target as HTMLElement).dataset.index || "0");
             setTimeout(() => {
               setVisibleCards((prev) => new Set([...prev, index]));
             }, index * 200);
@@ -349,7 +381,8 @@ export default function Experiences() {
                         </div>
                         <Link
                           className="link white-btn"
-                          to={`/experience/${exp.id}`}
+                          to="/experience/$id"
+                          params={{ id: exp.id }}
                         >
                           <Button
                             variant="outline"

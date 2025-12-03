@@ -12,6 +12,7 @@ import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 import { Textarea } from "@/components/ui/textarea";
 import { createFileRoute } from "@tanstack/react-router";
+import { useEffect } from "react";
 import {
   Facebook,
   Instagram,
@@ -28,6 +29,10 @@ export const Route = createFileRoute("/contact")({
 });
 
 function Contact() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  }, []);
+
   const socialLinks = [
     {
       name: "LinkedIn",

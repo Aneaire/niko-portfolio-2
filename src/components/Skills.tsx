@@ -123,6 +123,11 @@ export default function Skills() {
       icon: Users,
       color: "bg-teal-100 text-teal-800 border-teal-300",
     },
+    {
+      name: "Workflow Automation",
+      icon: Zap,
+      color: "bg-cyan-100 text-cyan-800 border-cyan-300",
+    },
   ];
 
   useEffect(() => {
@@ -333,7 +338,7 @@ export default function Skills() {
         {/* Stats Section */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
           {[
-            { label: "Tools Mastered", value: "20+", icon: Settings },
+            { label: "Tools Mastered", value: "22+", icon: Settings },
             { label: "Years Experience", value: "10+", icon: Award },
             { label: "Certifications", value: "15+", icon: Star },
             { label: "Success Rate", value: "95%", icon: TrendingUp },
